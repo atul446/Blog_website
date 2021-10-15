@@ -14,5 +14,6 @@ class Post(models.Model):
     created_date=models.DateTimeField()
     text= models.TextField()
     
-    def _str_(self):
+    def __str__(self):
         return self.title
+        
